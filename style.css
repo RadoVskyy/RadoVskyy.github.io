@@ -67,3 +67,16 @@ img {
 br {
     clear:both;
 }
+
+a:hover {
+    color:cyan;
+}
+
+a:active {
+    color:grey;
+}
+
+a {
+    color:white;
+    text-decoration:none;
+}
