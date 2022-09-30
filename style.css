@@ -24,6 +24,7 @@ h2  {
     margin-left:1060px;
     margin-right:1060px;
     padding:5px;
+    background:linear-gradient(violet,cyan);
 }
 
 h3 {
@@ -35,6 +36,13 @@ h3 {
     
     position:relative;
     top:185px;
+}
+
+h4 {
+    font-size:50px;
+    text-align:center;
+    border:5px solid cyan;
+    padding:5px;
 }
 
 img {
@@ -53,9 +61,7 @@ img {
 }
 
 #tlo_gradient {
-    background:linear-gradient(cyan,white);
-    background-repeat:no-repeat;
-    background-attachment:fixed;
+    background:linear-gradient(violet,cyan);
     border:5px solid cyan;
 }
 
@@ -66,7 +72,7 @@ img {
 
 #prawo {
     float:right;
-    margin-left:50px;
+    margin-right:50px;
 }
 
 br {
@@ -78,10 +84,24 @@ a:hover {
 }
 
 a:active {
-    color:grey;
+    color:violet;
 }
 
 a {
-    color:white;
+    color:black;
     text-decoration:none;
+}
+
+video {
+    border:5px solid cyan;
+    border-radius:10px;
+    border-style:outset;
+    height:500px;
+    width:500px;
+}
+
+button {
+    background:linear-gradient(violet,cyan);
+    height:50px;
+    width:120px;
 }
