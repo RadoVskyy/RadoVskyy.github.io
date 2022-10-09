@@ -90,13 +90,12 @@ audio::-webkit-media-controls-panel {
 }
 
 #muzyka2 {
-    height:350px;
-    width:350px;
+    height:26%;
+    width:14%;
     background:linear-gradient(rgb(0, 140, 255),rgb(0, 58, 139));
-    transform:translate(-150px, 210%);
+    transform:translate(-48%, 210%);
     position:fixed;
     border-radius:100%;
-    font-size:25px;
 }
 
 
