@@ -27,16 +27,16 @@ body {
 
 @keyframes naglowek_dolny {
     from{
-        transform:translate(-100%,600%)
+        transform:translateX(20%)
     }
 
     to{
-        transform:translate(120%,600%)
+        transform:translateX(20%)
     }
 }
 
 hr {
-    height:4px;
+    height:3px;
     background-color:white;
 }
 
@@ -46,7 +46,7 @@ h1 {
 }
 
 h2 {
-    font-size:125%;
+    font-size:30px;
     position:fixed;
     z-index:1;
     text-shadow:3px 3px 5px darkblue;
@@ -57,7 +57,7 @@ h2 {
 /*PRZYCISKI*/
 
 button {
-    height: 100px;
+    height: 80px;
     width: 18%;
     font-size:300%;
     color:white;
@@ -113,18 +113,19 @@ audio::-webkit-media-controls-panel {
     height:26%;
     width:14%;
     background:linear-gradient(rgb(0, 140, 255),rgb(0, 58, 139));
-    transform:translate(-48%, 210%);
+    transform:translate(-40%, 170%);
     position:fixed;
     border-radius:100%;
     z-index:2;
 }
 
 #muzyka {
-    transform:translate(23%, 2750%);
+    transform:translate(22%, 1670%);
     font-size:25px;
     position:fixed;
     z-index:3;
 }
+
 
 /*ZDJECIA*/
 
