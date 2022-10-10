@@ -11,16 +11,27 @@ body {
     font-size:600%;
     text-shadow: 5px 5px 5px black;
 
-    animation: naglowek 6s linear infinite;
+    animation: naglowek 4s linear infinite;
+    animation-direction: alternate;
 }
 
 @keyframes naglowek {
     from{
-        transform:translateX(66%)
+        transform:translateX(15%)
     }
 
     to{
-        transform:translateX(-66%)
+        transform:translateX(-15%)
+    }
+}
+
+@keyframes naglowek_dolny {
+    from{
+        transform:translate(-100%,600%)
+    }
+
+    to{
+        transform:translate(120%,600%)
     }
 }
 
@@ -30,8 +41,17 @@ hr {
 }
 
 h1 {
-    font-size:50px;
+    font-size:300%;
     text-shadow: 5px 5px 5px black;
+}
+
+h2 {
+    font-size:125%;
+    position:fixed;
+    z-index:1;
+    text-shadow:3px 3px 5px darkblue;
+
+    animation: naglowek_dolny 5s linear infinite;
 }
 
 /*PRZYCISKI*/
@@ -96,6 +116,7 @@ audio::-webkit-media-controls-panel {
     transform:translate(-48%, 210%);
     position:fixed;
     border-radius:100%;
+    z-index:2;
 }
 
 
