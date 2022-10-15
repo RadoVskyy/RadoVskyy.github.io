@@ -1,35 +1,54 @@
 <!DOCTYPE html>
 
-<html>
+<html lang="en">
 
 <head>
 
+    <meta name="viewport" content="width:device-width, initial-scale=1.0">
     <meta charset="UTF-8">
-    <title>Koksownik</title>
-    <link rel="stylesheet" media="screen and (min-device-width: 2560px)" href="style.css">
-    <link rel="stylesheet" media="screen and (max-device-width: 1920px)" href="style2.css">
-
+    <title>Kalkulator</title>
+    <link rel="stylesheet" href="style.css">
+    
 </head>
 
 <body>
 
-    <hr><div id="naglowek">KOKSOWNIKOWA<br>STRONA</div><hr><br>
+    <h1 id="naglowek">KALKULATOR PRZECIWPROSTOKĄTNEJ</h1><hr id="hr1">
 
-    <a href="zdjecia.html"><button style="float:left;margin-left:5%;" id="przycisk">Galeria zdjęć</button></a>
-    <a href="filmy.html"><button>Galeria filmów</button></a>
-    <a><button style="float:right; margin-right:5%">Cos tam</button><hr style="margin-top:1.2%"></a>
+    <div id="tlo"></div>
 
-    <div id="muzyka2"></div>
-    <div id="muzyka">MUZYKA</div>
-    <audio src="muzyka/giga.mp3" controls controlsList="nodownload noplaybackrate" style="z-index:3;"></audio>
+    <div style="position: absolute; margin-left: 39.5vw">
+        <h1 id="naglowek2">Kalkulator</h1><hr id="hr2"><br>
 
-    <hr style="width:500px;margin-top:30px;"><h1>RadoVsky</h1>
-    <hr style="width:500px"><br><img src="zdjecia/Avatar nowy.png"><br><br><hr style="width:500px"><br>
-    <a href="https://www.youtube.com/channel/UCTJ3Cw8Pis78FtDN8EXsNtA"><img src="zdjecia/yt.png" id="ikona"></a>
-    <a href="https://steamcommunity.com/id/RadoVsky_/"><img src="zdjecia/steam.png" id="ikona"></a><br><br><hr style="width:300px">
+        <div style="margin-top: 5vh;">
+            <label id="labA">WPROWADŹ BOK A:</label><br>
+            <input type="text" id="bokA"><br><br>
+        </div>
 
-    <h2>KOKSOWNIKOWA STRONA&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspKOKSOWNIKOWA STRONA&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspKOKSOWNIKOWA STRONA&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspKOKSOWNIKOWA STRONA&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspKOKSOWNIKOWA STRONA&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspKOKSOWNIKOWA STRONA&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspKOKSOWNIKOWA STRONA</h2>
+        <div style="margin-top: 3vh;">
+            <label id="labB">WPROWADŹ BOK B:</label><br>
+            <input type="text" id="bokB"><br><br>
+        </div>
 
+        <button id="przycisk">Oblicz</button>
+
+        <h1 id="bokC">BOK C ~</h1>
+    </div>
+
+    <br><br><br><h1 id="naglowek">LICZNIK</h1><hr id="hr1">
+    
+    <div id="tlo2"></div>
+
+    <div style="margin-top: 32vh">
+        <label id="licznik">0</label>
+        <div id="p3">
+            <button id="odejmij">Odejmij</button>
+            <button id="resetuj">Resetuj</button>
+            <button id="dodaj">Dodaj</button>
+        </div>
+    </div>
+
+    <script src="index.js"></script>
 </body>
 
 </html>

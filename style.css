@@ -1,159 +1,119 @@
 body {
-    background: url(zdjecia/tlo.jpg) fixed no-repeat;
-    background-size: cover;
-    font-family: Bahnschrift;
-    color:white;
+    background: linear-gradient(to right, darkblue, rgb(0, 225, 255));
+    font-family: Consolas;
+    color: white;
     text-align: center;
+    text-shadow: 3px 3px 10px black;
     overflow-x: hidden;
 }
 
 #naglowek {
-    font-size:600%;
-    text-shadow: 5px 5px 5px black;
+    font-size: 3vw;
 
-    animation: naglowek 4s linear infinite;
-    animation-direction: alternate;
+    animation: naglowek 3s infinite ease-in-out alternate;
 }
 
 @keyframes naglowek {
-    from{
-        transform:translateX(15%)
+    from {
+        transform: scale(1.15);
     }
-
-    to{
-        transform:translateX(-15%)
+    to {
+        transform: scale(1);
     }
 }
 
-@keyframes naglowek_dolny {
-    from{
-        transform:translate(-100%,600%)
-    }
-
-    to{
-        transform:translate(120%,600%)
-    }
+#naglowek2 {
+    transform: translateY(-60vh);
+    font-size: 2vw;
+    text-shadow: 3px 3px 10px black
 }
 
 hr {
-    height:4px;
-    background-color:white;
+    height: 0.35vh;
+    border: none;
+    background: white;
+    border-radius: 4px;
+    box-shadow: 3px 3px 10px gray;
 }
 
-h1 {
-    font-size:300%;
-    text-shadow: 5px 5px 5px black;
+#hr1 {
+    width: 60vw;
+    margin-top: -2vh;
 }
 
-h2 {
-    font-size:125%;
-    position:fixed;
-    z-index:1;
-    text-shadow:3px 3px 5px darkblue;
-
-    animation: naglowek_dolny 5s linear infinite;
+#hr2 {
+    width: 20vw;
+    margin-top: -62vh;
+    box-shadow: 3px 3px 10px black;
 }
 
-/*PRZYCISKI*/
+#tlo {
+    height: 60vh;
+    width: 25vw;
+    background: rgba(255, 255, 255, .5);
+    border-radius: 20px;
+    z-index: 1;
+    transform: translateX(37vw);
+    margin-top: 5vh;
+    box-shadow: 3px 3px 10px gray;
+}
+
+#tlo2 {
+    height: 30vh;
+    width: 25vw;
+    background: rgba(255, 255, 255, .5);
+    border-radius: 20px;
+    z-index: 1;
+    transform: translateX(37vw);
+    margin-top: 5vh;
+    box-shadow: 3px 3px 10px gray;
+}
+
+label {
+    font-size: 1vw;
+}
+
+input {
+    height: 3vh;
+    width: 15vw;
+    border: none;
+    border-radius: 20px;
+    text-align: center;
+    margin-top: 0.5vh;
+    font-size: 1.1vw;
+}
 
 button {
-    height: 100px;
-    width: 18%;
-    font-size:300%;
-    color:white;
-    border-color:white;
-    border-width:4px;
-    border-radius:5px;
-    border-style:solid;
-    box-shadow: 5px 5px 5px black;
-    background: linear-gradient(to right,rgb(0, 140, 255),rgb(0, 58, 139));
-    transition:0.3s;
+    border: none;
+    background: black;
+    color: white;
+    height: 3vh;
+    width: 7vw;
+    border-radius: 20px;
+    margin-top: 1.5vh;
+    font-size: 0.8vw;
 }
 
 button:hover {
-    color:cyan;
-    transform: scale(1.15);
-    transition: 0.3s;
     cursor: pointer;
+    color: cyan;
 }
 
-button:active {
-    color:black;
+#bokC {
+    margin-top: 6vh;
+    font-size: 1.8vw;
+    border: 3px solid white;
+    border-radius: 20px;
+    padding: 1vh;
 }
 
-
-/*AUDIO*/
-
-audio {
-    position:fixed;
-    bottom:0.5%;
-    left:0.3%;
-    height:30px;
-    width:140px;
+#licznik {
+    font-size: 5vw;
+    display: block;
+    transform: translateY(-59vh);
 }
 
-audio::-webkit-media-controls-timeline {
-    display: none !important;
-}
+#p3 {
+    transform: translateY(-58vh);
 
-audio::-webkit-media-controls-current-time-display {
-    display: none;
-}
-
-audio::-webkit-media-controls-time-remaining-display {
-    display: none;
-}
-
-audio::-webkit-media-controls-panel {
-    -webkit-justify-content: center;
-    height: 27px;
-}
-
-#muzyka2 {
-    height:26%;
-    width:14%;
-    background:linear-gradient(rgb(0, 140, 255),rgb(0, 58, 139));
-    transform:translate(-48%, 210%);
-    position:fixed;
-    border-radius:100%;
-    z-index:2;
-}
-
-#muzyka {
-    transform:translate(23%, 2750%);
-    font-size:25px;
-    position:fixed;
-    z-index:3;
-}
-
-/*ZDJECIA*/
-
-img {
-    border-radius:50%;
-    height:300px;
-    width:300px;
-    border: 4px solid white;
-    box-shadow: 10px 10px 7px black;
-}
-
-#ikona {
-    height:100px;
-    width:100px;
-    border: none;
-    margin-left:15px;
-    margin-right:15px;
-    transition:0.3s;
-}
-
-#ikona:hover {
-    transform:scale(1.25);
-    transition:0.3s;
-}
-
-#galeria {
-    border-radius: 5%;
-    height: 400px;
-    width: 500px;
-    margin-left: 20px;
-    margin-right: 20px;
 }
