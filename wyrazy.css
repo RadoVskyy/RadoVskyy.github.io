@@ -1,0 +1,99 @@
+body{
+    background: linear-gradient(to right, rgb(0, 0, 103), rgb(14, 188, 251));
+    overflow-x: hidden;
+    font-family: Arial;
+    color: white;
+    text-shadow: 3px 3px 10px black;
+    text-align: center;
+    margin-left: 0;
+}
+
+hr{
+    height: 0.20vw;
+    border: none;
+    background: white;
+    border-radius: 3px;
+    box-shadow: 3px 3px 10px black;
+}
+
+textarea {
+    height: 30vh;
+    width: 28vw;
+    border: none;
+    border-radius: 10px;
+    font-size: 0.5vw;
+    box-shadow: 3px 3px 10px black;
+    margin-top: 12vh;
+    box-sizing: border-box;
+    padding: 12px 20px;
+}
+
+button{
+    height: 5vh;
+    width: 11vw;
+    font-size: 1vw;
+    border: none;
+    border-radius: 15px;
+    background: black;
+    color: white;
+}
+
+button:hover{
+    color: cyan;
+    cursor: pointer;
+}
+
+#przycisk {
+    position: absolute;
+    transform: translate(-19.4vw, 46vh);
+}
+
+#naglowek{
+    font-size: 3vw;
+    animation: naglowek 3s ease-in-out infinite alternate;
+    margin-top: 0;
+}
+
+@keyframes naglowek {
+    from{
+        transform: scale(1.15);
+    }
+    to{
+        transform: scale(1);
+    }
+}
+
+#tlo {
+    background: rgba(255, 255, 255, .4);
+    height: 63vh;
+    width: 60vh;
+    border-radius: 20px;
+    z-index: -1;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+}
+
+#wynik {
+    transform: translateY(8.5vh);
+}
+
+#powrot {
+    top: 53%;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    position: fixed;
+    width: 15vw;
+    letter-spacing: 10px;
+    transition: 0.3s;
+}
+
+#powrot:hover {
+    width: 25vw;
+    transition: 0.3s;
+}

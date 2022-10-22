@@ -1,119 +1,128 @@
-body {
-    background: linear-gradient(to right, darkblue, rgb(0, 225, 255));
-    font-family: Consolas;
+body{
+    background: linear-gradient(to right, rgb(0, 0, 103), rgb(14, 188, 251));
+    overflow: hidden;
+    font-family: Arial;
     color: white;
-    text-align: center;
     text-shadow: 3px 3px 10px black;
-    overflow-x: hidden;
+    text-align: center;
 }
 
-#naglowek {
-    font-size: 3vw;
-
-    animation: naglowek 3s infinite ease-in-out alternate;
-}
-
-@keyframes naglowek {
-    from {
-        transform: scale(1.15);
-    }
-    to {
-        transform: scale(1);
-    }
-}
-
-#naglowek2 {
-    transform: translateY(-60vh);
-    font-size: 2vw;
-    text-shadow: 3px 3px 10px black
-}
-
-hr {
-    height: 0.35vh;
+hr{
+    height: 0.20vw;
     border: none;
     background: white;
-    border-radius: 4px;
-    box-shadow: 3px 3px 10px gray;
-}
-
-#hr1 {
-    width: 60vw;
-    margin-top: -2vh;
-}
-
-#hr2 {
-    width: 20vw;
-    margin-top: -62vh;
+    border-radius: 3px;
     box-shadow: 3px 3px 10px black;
 }
 
-#tlo {
-    height: 60vh;
-    width: 25vw;
-    background: rgba(255, 255, 255, .5);
-    border-radius: 20px;
-    z-index: 1;
-    transform: translateX(37vw);
-    margin-top: 5vh;
-    box-shadow: 3px 3px 10px gray;
-}
-
-#tlo2 {
-    height: 30vh;
-    width: 25vw;
-    background: rgba(255, 255, 255, .5);
-    border-radius: 20px;
-    z-index: 1;
-    transform: translateX(37vw);
-    margin-top: 5vh;
-    box-shadow: 3px 3px 10px gray;
-}
-
-label {
-    font-size: 1vw;
-}
-
-input {
-    height: 3vh;
-    width: 15vw;
+input{
+    height: 3.5vh;
+    width: 13vw;
     border: none;
     border-radius: 20px;
+    font-size: 1.3vw;
     text-align: center;
-    margin-top: 0.5vh;
-    font-size: 1.1vw;
+    box-shadow: 3px 3px 10px black;
 }
 
-button {
+button{
+    height: 3.5vh;
+    width: 6vw;
+    font-size: 1vw;
     border: none;
+    border-radius: 20px;
     background: black;
     color: white;
-    height: 3vh;
-    width: 7vw;
-    border-radius: 20px;
-    margin-top: 1.5vh;
-    font-size: 0.8vw;
 }
 
-button:hover {
-    cursor: pointer;
+button:hover{
     color: cyan;
+    cursor: pointer;
 }
 
-#bokC {
-    margin-top: 6vh;
-    font-size: 1.8vw;
-    border: 3px solid white;
+#tlo{
+    height: 40vh;
+    width: 25vw;
+    background: rgba(255, 255, 255, .5);
+    z-index: -1;
+    position: absolute;
+    transform: translate(37.2vw, 18vh);
     border-radius: 20px;
-    padding: 1vh;
 }
 
-#licznik {
-    font-size: 5vw;
-    display: block;
-    transform: translateY(-59vh);
+#naglowek{
+    transform: translateY(21.5vh);
+    font-size: 2vw;
 }
 
-#p3 {
-    transform: translateY(-58vh);
+#hr1{
+    width: 18vw;
+    transform: translateY(20vh);
+}
+
+#lab1{
+    font-size: 0.85vw;
+    margin-right: 8.5vw;
+    text-shadow: 3px 3px 10px black;
+    font-weight: bold;
+}
+
+#wpisywanie{
+    transform: translateY(28vh);
+}
+
+#przycisk{
+    transform: translateY(32vh);
+}
+
+#zle{
+    font-size: 1vw;
+    color: rgb(255, 0, 0);
+    font-weight: 500;
+    transform: translateY(33vh);
+    text-shadow: none;
+}
+
+@media screen and (max-width: 480px) {
+    #tlo {
+        height: 30%;
+        width: 50%;
+        transform: translate(46%, 70%);
+    }
+
+    #naglowek {
+        font-size: 20px;
+        transform: translateY(24vh);
+    }
+
+    #hr1 {
+        width: 30%;
+        height: 0.5vw;
+        margin-top: 35px;
+    }
+
+    input {
+        width: 30%;
+        height: 2vh;
+        font-size: 10px;
+    }
+
+    #haslo {
+        transform: translateY(-7vh);
+    }
+
+    #lab1 {
+        margin-top: -50px;
+        font-size: 9px;
+        position: absolute;
+        transform: translateX(-48px);
+    }
+
+    #przycisk {
+        height: 2.5vh;
+        width: 20%;
+        transform: translateY(25vh);
+        font-size: 10px;
+    }
 
 }
