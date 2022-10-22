@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="licznik.css">
+    <title>Koksownikowy licznik</title>
+</head>
+<body>
+    <hr style="width:50vw;"><br><br><h1 id="naglowek">Licznik</h1><hr style="width:50vw;">
+    <div id="tlo"></div>
+    <p id="licznik">0</p>
+    <div id="przyciski">
+        <button id="odejmij">Odejmij</button>
+        <button id="resetuj">Resetuj</button>
+        <button id="dodaj">Dodaj</button>
+    </div>
+    <script>
+        let licznik = 0
+
+        document.getElementById("odejmij").onclick = function(){
+
+            licznik -= 1;
+            document.getElementById("licznik").innerHTML = licznik;
+        }
+
+        document.getElementById("resetuj").onclick = function(){
+
+            licznik = 0
+            document.getElementById("licznik").innerHTML = licznik;
+        }
+
+        document.getElementById("dodaj").onclick = function(){
+
+            licznik += 1;
+            document.getElementById("licznik").innerHTML = licznik;
+        }
+    </script>
+    <a href="index2.html"><button id="powrot">POWRÓT</button></a>
+</body>
+</html>

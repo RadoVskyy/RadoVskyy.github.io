@@ -16,16 +16,14 @@ hr{
     box-shadow: 3px 3px 10px black;
 }
 
-textarea {
-    height: 30vh;
-    width: 28vw;
+input{
+    height: 3.5vh;
+    width: 13vw;
     border: none;
-    border-radius: 10px;
-    font-size: 0.5vw;
+    border-radius: 20px;
+    font-size: 1.3vw;
+    text-align: center;
     box-shadow: 3px 3px 10px black;
-    margin-top: 12vh;
-    box-sizing: border-box;
-    padding: 12px 20px;
 }
 
 button{
@@ -36,16 +34,14 @@ button{
     border-radius: 15px;
     background: black;
     color: white;
+    transition: 0.3s;
+    margin-bottom: 2.5vh;
 }
 
 button:hover{
     color: cyan;
     cursor: pointer;
-}
-
-#przycisk {
-    position: absolute;
-    transform: translate(-19.4vw, 46vh);
+    transition: 0.3s;
 }
 
 #naglowek{
@@ -63,37 +59,26 @@ button:hover{
     }
 }
 
-#tlo {
-    background: rgba(255, 255, 255, .4);
-    height: 63vh;
-    width: 60vh;
+img {
+    height: 35vh;
+    width: 35vh;
+    border: 0.20vw solid white;
     border-radius: 20px;
-    z-index: -1;
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    margin: auto;
+    box-shadow: 3px 3px 10px black;
+    margin-left: 4vw;
 }
 
-#wynik {
-    transform: translateY(8.5vh);
+img:hover {
+    cursor: pointer;
 }
 
 #powrot {
-    top: 53%;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    margin: auto;
-    position: fixed;
     width: 15vw;
     letter-spacing: 5px;
     transition: 0.3s;
 }
 
 #powrot:hover {
-    width: 25vw;
+    width: 23vw;
     transition: 0.3s;
 }

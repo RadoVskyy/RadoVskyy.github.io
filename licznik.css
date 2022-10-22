@@ -1,11 +1,10 @@
 body{
     background: linear-gradient(to right, rgb(0, 0, 103), rgb(14, 188, 251));
-    overflow-x: hidden;
+    overflow: hidden;
     font-family: Arial;
     color: white;
     text-shadow: 3px 3px 10px black;
     text-align: center;
-    margin-left: 0;
 }
 
 hr{
@@ -16,36 +15,30 @@ hr{
     box-shadow: 3px 3px 10px black;
 }
 
-textarea {
-    height: 30vh;
-    width: 28vw;
+input{
+    height: 3.5vh;
+    width: 13vw;
     border: none;
-    border-radius: 10px;
-    font-size: 0.5vw;
+    border-radius: 20px;
+    font-size: 1.3vw;
+    text-align: center;
     box-shadow: 3px 3px 10px black;
-    margin-top: 12vh;
-    box-sizing: border-box;
-    padding: 12px 20px;
 }
 
 button{
     height: 5vh;
-    width: 11vw;
+    width: 7vw;
     font-size: 1vw;
     border: none;
-    border-radius: 15px;
+    border-radius: 20px;
     background: black;
     color: white;
+    margin-left: 20px;
 }
 
 button:hover{
     color: cyan;
     cursor: pointer;
-}
-
-#przycisk {
-    position: absolute;
-    transform: translate(-19.4vw, 46vh);
 }
 
 #naglowek{
@@ -65,35 +58,35 @@ button:hover{
 
 #tlo {
     background: rgba(255, 255, 255, .4);
-    height: 63vh;
-    width: 60vh;
+    height: 40vh;
+    width: 30vw;
     border-radius: 20px;
-    z-index: -1;
     position: absolute;
+    z-index: -1;
     top: 0;
+    bottom: 0;
     left: 0;
     right: 0;
-    bottom: 0;
     margin: auto;
 }
 
-#wynik {
-    transform: translateY(8.5vh);
+#licznik {
+    font-size: 5.5vw;
+    margin-top: 12%;
+}
+
+#przyciski {
+    transform: translateY(-5vh);
 }
 
 #powrot {
-    top: 53%;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    margin: auto;
-    position: fixed;
+    transform: translateY(-2vh);
     width: 15vw;
     letter-spacing: 5px;
     transition: 0.3s;
 }
 
 #powrot:hover {
-    width: 25vw;
+    width: 23vw;
     transition: 0.3s;
 }
