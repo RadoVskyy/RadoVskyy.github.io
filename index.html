@@ -1,33 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width", initial-scale="1.0">
     <link rel="stylesheet" href="style.css">
-    <title>Zaloguj się do KOKSOWNIKOWEJ STRONY</title>
-</head>
-<body>
-    <div id="tlo"></div>
-    <h1 id="naglowek">ZALOGUJ</h1><hr id="hr1">
-    <div id="wpisywanie">
-        <label id="lab1">HASŁO</label><br>
-        <input type="password" id="haslo">
+    <link rel="icon" href="ikony/ikona.png">
+    <title>FAJNA STRONA</title>
+  </head>
+  <body>
+    <div id="login">
+      <h1 id="loginNaglowek">LOGOWANIE</h1><hr><br><br><br>
+      <span>
+        <label id="loginLabel">Login</label><br>
+        <input type="text" class="InputLogin" id="loginInput">
+      </span>
+      <br><br>
+      <span>
+        <label id="loginLabel">Hasło</label><br>
+        <input type="password" class="InputLogin" id="hasloInput">
+      </span><br><br><br><br><br>
+      <button id="przyciskLogin">ZALOGUJ</button><br><br>
+      <p id="zleHaslo"></p>
     </div>
-    <button id="przycisk">Zaloguj</button>
-    <p id="zle"></p>
     <script>
-        document.getElementById("przycisk").onclick = function(){
-            
-        let login;
-        login = document.getElementById("haslo").value;
-
-        if(login == "GejowNieLubie"){
-            window.location.href = "index2.html";
+      let login;
+      let haslo;
+      document.getElementById("przyciskLogin").onclick = function(){
+        login = document.getElementById("loginInput").value;
+        haslo = document.getElementById("hasloInput").value;
+        if(login == "Koksownik" && haslo == "StachJestRudy"){
+          window.location.href = "start.html";
         }
-        else{
-            document.getElementById("zle").innerHTML = "Nieprawidłowe hasło. Spróbuj ponownie.";
+        else if(login == "Koksownik" && haslo != "StachJestRudy"){
+          document.getElementById("zleHaslo").innerHTML = "Nieprawidłowe hasło! Spróbuj ponownie."
         }
-    }
-    </script> 
-</body>
+        else if(login != "Koksownik" && haslo == "StachJestRudy"){
+          document.getElementById("zleHaslo").innerHTML = "Nieprawidłowy login! Spróbuj ponownie."
+        }
+        else if(login != "Koksownik" && haslo != "StachJestRudy"){
+          document.getElementById("zleHaslo").style.fontSize = "0.9vw";
+          document.getElementById("zleHaslo").innerHTML = "Nieprawidłowy login i hasło! Spróbuj ponownie."
+        }
+      }
+    </script>
+  </body>
 </html>

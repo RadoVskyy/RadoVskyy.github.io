@@ -18,30 +18,16 @@
       <h1 style="margin-top:0;transform:translateY(4vh)">FAJNA STRONA</h1><br><br>
     </div>
     <div id="galeria">
-      <br><br><br><h1 style="margin-top:0">LICZNIK</h1><hr>
-      <div id="licznik">
-        <div id="wynik">
-          <p id="liczba">0</p>
-        </div>
-        <button class="przyciskiLicznik" id="minus">-</button>
-        <button class="przyciskiLicznik" id="reset">C</button>
-        <button class="przyciskiLicznik" id="plus">+</button>
-      </div>
+      <br><br><br><h1 style="margin-top:0;">GALERIA ZDJĘĆ</h1><hr>
+      <img src="zdjecia/karol.png" class="zdjeciaGaleria">
+      <img src="zdjecia/konrad.png" class="zdjeciaGaleria">
+      <img src="zdjecia/stach.png" class="zdjeciaGaleria">
     </div>
-    <script>
-      let a = 0;
-      document.getElementById("minus").onclick = function(){
-        a = a - 1;
-        document.getElementById("liczba").innerHTML = a;
-      }
-      document.getElementById("reset").onclick = function(){
-        a = 0;
-        document.getElementById("liczba").innerHTML = a;
-      }
-      document.getElementById("plus").onclick = function(){
-        a = a + 1;
-        document.getElementById("liczba").innerHTML = a;
-      }
-    </script>
+    <div id="galeria">
+      <br><br><br><h1 style="margin-top:0;">GALERIA FILMÓW</h1><hr>
+      <video src="filmy/gradowicz.mp4" controls class="filmyGaleria"></video>
+      <video src="filmy/kuba.mp4" controls class="filmyGaleria"></video>
+      <video src="filmy/konrad.mp4" controls class="filmyGaleria"></video>
+    </div>
   </body>
 </html>
