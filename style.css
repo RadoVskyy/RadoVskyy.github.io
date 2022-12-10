@@ -190,3 +190,46 @@ h1 {
   margin: 5vh;
   margin-top: 8vh;
 }
+
+#sociale {
+  height: 65vh;
+  width: 42vw;
+  background:rgba(255, 255, 255, .5);
+  margin-left: 14vw;
+  box-shadow: 5px 5px 10px black;
+  margin-top: 1vw;
+  position: absolute;
+}
+
+#glosowki {
+  height: 65vh;
+  width: 42vw;
+  background:rgba(255, 255, 255, .5);
+  margin-left: 14vw;
+  box-shadow: 5px 5px 10px black;
+  margin-top: 1vw;
+  margin-left: 57vw;
+}
+
+#avatar {
+  border-radius: 100%;
+  margin-top: 5vh;
+  height: 25vh;
+  border: 0.2vw solid white;
+}
+
+.socialeIkony {
+  height: 4vw;
+  margin: 1vw;
+  transition: 0.2s;
+}
+
+.socialeIkony:hover {
+  transform: scale(1.15);
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+audio::-webkit-media-controls-panel {
+  background: rgb(0, 157, 255);
+}
